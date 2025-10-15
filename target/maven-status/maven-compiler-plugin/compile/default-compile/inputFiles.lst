@@ -1,0 +1,9 @@
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\App.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\repo\TaskRepo.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\service\CommandValidator.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\service\K8sRunner.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\service\ShellRunner.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\Task.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\TaskApiApplication.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\TaskExecution.java
+D:\kaiburr\Task2_Kubernetes\src\main\java\com\kaiburr\tasks\web\TaskController.java

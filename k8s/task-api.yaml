@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: task-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: task-api }
+  template:
+    metadata:
+      labels: { app: task-api }
+    spec:
+      serviceAccountName: task-api-sa
+      containers:
+      - name: task-api
+        # If you pushed to Docker Hub, replace with: <your-username>/task-api:v1
+        image: task-api:k8s
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080
+        env:
+        - name: MONGODB_URI
+          value: mongodb://mongo-svc:27017/kaiburr
+        # We'll use this later to switch execution to run inside Kubernetes pods
+        - name: EXEC_MODE
+          value: local
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: task-api-svc
+spec:
+  selector:
+    app: task-api
+  type: NodePort
+  ports:
+  - port: 8080
+    targetPort: 8080
+    nodePort: 30080

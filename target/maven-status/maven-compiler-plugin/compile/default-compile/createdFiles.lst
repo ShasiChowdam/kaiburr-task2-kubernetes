@@ -1,0 +1,9 @@
+com\kaiburr\tasks\Task.class
+com\kaiburr\tasks\TaskApiApplication.class
+com\kaiburr\tasks\repo\TaskRepo.class
+com\kaiburr\tasks\service\K8sRunner.class
+com\kaiburr\tasks\service\ShellRunner.class
+com\kaiburr\tasks\web\TaskController.class
+com\kaiburr\tasks\App.class
+com\kaiburr\tasks\service\CommandValidator.class
+com\kaiburr\tasks\TaskExecution.class
